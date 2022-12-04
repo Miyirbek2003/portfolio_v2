@@ -110,7 +110,7 @@ img {
 .hero-title {
     display: flex;
     align-items: flex-end;
-    gap: 100px;
+    gap: 20px;
 }
 
 .hero-title h1 {
@@ -403,7 +403,7 @@ img {
     .hero-title span{
         margin-bottom: 5px;
     }
-    .actions a{
+    .actions button{
         position: absolute;
         left: 0;
         margin-top: 10px;
@@ -437,7 +437,7 @@ img {
 }
 
 @media screen and (max-width: 560px){
-    
+   
     .projects{
         grid-template-columns: 1fr;
     }
@@ -451,11 +451,14 @@ img {
     .project h1{
         margin-top: 0;
     }
+    .hero-title{
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 430px){
     .text h1{
-        font-size: 30px;
+        font-size: 50px;
     }
     .hero .container{
         justify-content: start;
@@ -471,4 +474,5 @@ img {
     .header.fixed{
         padding: 0;
     }
+   
 }
