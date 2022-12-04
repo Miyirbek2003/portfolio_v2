@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/pngegg.png">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="logo">
+            <a href="#home"><img src="./img/logo.png" alt="logo_IMG" /></a>
+          </div>
+          <ul class="menu">
+            <li><button value="home" class="item active">home</button></li>
+            <li><button value="about" class="item">about</button></li>
+            <li><button value="works" class="item">works</button></li>
+            <li><button value="contact" class="item">contact</button></li>
+          </ul>
+          <div class="burger">
+            <i class="menuIcon material-icons">&#9776</i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="burger-menu" onclick="(e) => e.stopPropagation()">
+      <ul class="sidebar-menu">
+          <div class="close">
+            <i class="closeIcon material-icons">close</i>
+          </div>
+          <li><button value="home" class="item active">home</button></li>
+            <li><button value="about" class="item">about</button></li>
+            <li><button value="works" class="item">works</button></li>
+            <li><button value="contact" class="item">contact</button></li>
+        </ul>
+    </div>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-title">
+
+          <div class="text">
+            <span> Hi everybody </span>
+            <h1>My name is Miyirbek</h1>
+            <p>Web developer</p>
+          </div>
+          <div class="actions">
+            <button class="btn">More about me</button>
+          </div>
+          <a class="sc" href="#">Scroll Down</a>
+        </div>
+        
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-inner">
+          <div class="title">
+            <span>About</span>
+            <h2>Personal Info</h2>
+            <p>Get to know more about me</p>
+          </div>
+          <div class="about-text">
+            <div class="left">
+              <h4>Hello!</h4>
+              <p>
+                My name is Miyirbek Oskinbaev. I am 19 years old, live in
+                <span>Nukus</span>. I am a passionate Frontend Web developer
+                using web technologies to build products and focusing on solving
+                problems for different niches and different industries using the
+                power of technology
+              </p>
+              <br> 
+              <p>
+                I would love to hear from you. Whether it's a project, job
+                opportunity, or just a chat. Feel free to contact me.
+              </p>
+            </div>
+            <div class="right">
+                <h4>
+                    Skills
+                </h4>
+                <div class="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>SCSS</span>
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>GIT</span>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works" id="works">
+        <div class="container">
+            <div class="works-inner">
+                <div class="title">
+                    <span>
+                        Works
+                    </span>
+                    <h2>
+                        Latest Projects
+                    </h2>
+                    <p>
+                        Here you can find some of the projects that I created recently
+                    </p>
+                </div>
+                <div class="projects">
+                    <div class="project">
+                        <div class="img">
+                            <img src="https://screenshot-proxy.netlify.app/f_avif,w_204/https://d33wubrfki0l68.cloudfront.net/634440087c44911eac811248/screenshot_2022-10-10-15-53-48-0000.png" alt="">
+                        </div>
+                        <h1>Users</h1>
+                        <p>
+                            I created this application by using React js. Additional, I used react-router-dom, react-redux, axios. Here you can add, remove and edit users.
+                        </p>
+                        <a href="https://warm-creponne-4ae576.netlify.app/" target="_blank">See Live</a>
+                    </div>
+                    <div class="project">
+                        <div class="img">
+                            <img src="https://screenshot-proxy.netlify.app/f_avif,w_204/https://d33wubrfki0l68.cloudfront.net/637c8a07f6393f00084e417e/screenshot_2022-11-22-08-36-32-0000.png" alt="">
+                        </div>
+                        <h1>FinKit</h1>
+                        <p>
+                            This is simple landing page. It is responsive and pixel perfect
+                        </p>
+                        <a href="https://luminous-llama-b78880.netlify.app/" target="_blank">See Live</a>
+                    </div>
+                    <div class="project">
+                        <div class="img">
+                            <img src="https://screenshot-proxy.netlify.app/f_avif,w_204/https://d33wubrfki0l68.cloudfront.net/63693f48ee9f4109deb139b3/screenshot_2022-11-07-17-24-48-0000.png" alt="">
+                        </div>
+                        <h1>Quiz</h1>
+                        <p>
+                            Quiz application. It was created with React.js. I used hooks react-states. You can click "See Live" and check your knowladge
+                        </p>
+                        <a href="https://exquisite-dodol-f08698.netlify.app/" target="_blank">See Live</a>
+                    </div>
+                    <div class="project">
+                        <div class="img">
+                            <img src="https://screenshot-proxy.netlify.app/f_avif,w_204/https://d33wubrfki0l68.cloudfront.net/6388a2891881c71ea3ec1e2d/screenshot_2022-12-01-12-48-13-0000.png" alt="">
+                        </div>
+                        <h1>Tic Tok Toe</h1>
+                        <p>
+                            You have already played this game. Tic Tok Toe. Here two players. You can play with your friend. Check your succes and brain. This app was created with React.js including Typescript.
+                        </p>
+                        <a href="https://exquisite-dodol-f08698.netlify.app/" target="_blank">See Live</a>
+                    </div>
+                    <div class="project">
+                      <div class="img">
+                          <img src="https://screenshot-proxy.netlify.app/f_avif,w_204/https://d33wubrfki0l68.cloudfront.net/638c961432864e032c95a527/screenshot_2022-12-04-12-44-11-0000.png" alt="">
+                      </div>
+                      <h1>Furniture Shop</h1>
+                      <p>
+                          Just a simple landing page. I used js to navigate sections. The design is so beautiful
+                      </p>
+                      <a href="https://clever-tarsier-efcf51.netlify.app" target="_blank">See Live</a>
+                  </div>
+                  <div class="project">
+                    <div class="img">
+                        <img src="https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/63697d9feb18db1c617e5731/screenshot_2022-11-07-21-50-35-0000.png" alt="">
+                    </div>
+                    <h1>Велосипеды</h1>
+                    <p>
+                        Here I used Tabs to show bicycles for men and women. 
+                    </p>
+                    <a href="https://statuesque-llama-afb3ce.netlify.app" target="_blank">See Live</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contact">
+        <div class="container">
+            <div class="concacts-inner">
+                <div class="title">
+                    <span>Contact</span>
+                    <h2>
+                        Hi There
+                    </h2>
+                    <p>
+                        Submit the form below so I can get back to you as soon as possible
+                    </p>
+                </div>
+                <div class="form">
+                    <form class="form-inner">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Subject">
+                        <textarea  name="text"  cols="30" rows="10" placeholder="Message"></textarea>  
+                        <button class="sbmt">Submit</button>
+                    </form>
+
+                    <div class="infos">
+                        <div class="inf">
+                            <h4>PHONE</h4>
+                            <span>+998 91 095 39 17</span>
+                        </div>
+                        
+                        <div class="inf">
+                            <h4>EMAIL</h4>
+                            <span>oskinbaevmiyirbek@mail.ru</span>
+                        </div>
+                        
+                        <div class="inf">
+                            <h4>ADDRES</h4>
+                            <span>Karakalpakstan, Nukus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

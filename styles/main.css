@@ -1,0 +1,474 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: inherit;
+    min-width: 340px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+span,
+a,
+button,
+input,
+i,
+img {
+    display: inline-block;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.hero {
+    background-color: #202020;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    z-index: 1001;
+    padding: 10px 0;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header.fixed {
+    background-color: #202020;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: fixed;
+    z-index: 1001;
+    padding: 10px 10px;
+
+}
+
+.header-inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-inner .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-inner .menu button {
+    font-size: 15px;
+    color: white;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+}
+
+.header-inner .menu button.active {
+    color: crimson;
+}
+
+.header-inner img {
+    max-width: 60px;
+    width: 100%;
+}
+
+.hero .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    display: flex;
+    align-items: flex-end;
+    gap: 100px;
+}
+
+.hero-title h1 {
+    color: white;
+    font-size: 60px;
+}
+
+.hero-title span {
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+.hero-title p {
+    color: white;
+}
+
+.actions button {
+    width: 150px;
+    padding: 7px 10px;
+    margin-bottom: 25px;
+    color: white;
+    border: 2px solid white;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.actions button:hover {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+.sc {
+    bottom: -80px;
+    left:0;
+    color: white;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+}
+
+
+.about {
+    padding: 30px 0;
+}
+
+.about-text {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title span {
+    color: crimson;
+}
+
+.title h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.title p {
+    font-weight: 600;
+}
+
+.left {
+    padding: 0 20px;
+    width: 50%;
+}
+
+.left h4,
+.right h4 {
+    padding-bottom: 20px;
+}
+
+.left p {
+    letter-spacing: 0.2px;
+    line-height: 22px;
+}
+
+.left p span {
+    color: crimson;
+}
+
+.right {
+    width: 30%;
+}
+
+.skills {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skills span {
+    font-size: 14px;
+    width: auto;
+    padding: 6px 8px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 5px;
+    border: none;
+}
+
+.works {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(153, 153, 153, 0);
+    padding: 50px 0;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #202020;
+    padding: 25px 30px;
+    height: 400px;
+    color: white;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+.project h1{
+    margin-top: 15px;
+}
+
+.project .img {
+    max-width: 250px;
+    height: 170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img {
+    height: auto;
+}
+
+.project p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+.project a {
+    width: 100%;
+    padding: 7px 15px;
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+}
+
+.contacts {
+    padding: 30px 0;
+    background-color: #202020;
+}
+
+.contacts .title h2,
+.contacts .title p {
+    color: white;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.form-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-inner input {
+    max-width: 400px;
+    width: 100%;
+    font-size: 13px;
+    padding: 5px 7px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: white;
+    background-color: #202020;
+}
+
+.form-inner textarea {
+    max-width: 400px;
+    width: 100%;
+    background-color: #202020;
+    padding: 5px 7px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.infos .inf h4 {
+    color: white;
+}
+
+
+.infos span {
+    color: #ddd;
+}
+
+.burger-menu {
+    width: 0;
+    height: 100%;
+    background-color: white;
+    overflow-x: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+    
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center
+}
+.burger-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    background-color: white;
+    padding-top: 30px;
+    position: relative;
+}
+.burger-menu button{
+    background-color: transparent;
+    border: none;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 17px;
+}
+.close{
+    position: absolute;
+    right: -100px;
+    top:-15px;
+    cursor: pointer;
+}
+.burger {
+    display: none;
+}
+.title p{
+    text-align: center;
+}
+.sbmt{
+    max-width: 400px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: white;
+    padding: 7px 15px;
+    font-weight: 500;
+}
+.sbmt:hover{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+@media screen and (max-width: 700px) {
+    .title h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .hero-title{
+        gap: 10px;
+        position: relative;
+    }
+    .hero-title span{
+        margin-bottom: 5px;
+    }
+    .actions a{
+        position: absolute;
+        left: 0;
+        margin-top: 10px;
+        font-size: 11px;
+        padding: 2px 5px;
+        width: 100px;
+    }
+    .text h1{
+        font-size: 50px;
+    }
+    .burger {
+        color: red;
+        display: block;
+        cursor: pointer;
+    }
+
+    .header-inner .menu {
+        display: none;
+    }
+    .form{
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .about-text{
+        justify-content: space-between;
+    }
+    .left{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 560px){
+    
+    .projects{
+        grid-template-columns: 1fr;
+    }
+    .project{
+        height: 370px;
+    }
+    .project p{
+        height: auto;
+        font-size: 15px;
+    }
+    .project h1{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 430px){
+    .text h1{
+        font-size: 30px;
+    }
+    .hero .container{
+        justify-content: start;
+    }
+    .about-text {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .left, .right{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .header.fixed{
+        padding: 0;
+    }
+}
