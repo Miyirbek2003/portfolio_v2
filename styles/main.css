@@ -214,7 +214,9 @@ img {
     gap: 15px;
     flex-wrap: wrap;
 }
-
+textarea{
+    color: white;
+}
 .skills span {
     font-size: 14px;
     width: auto;
